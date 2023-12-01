@@ -6,7 +6,7 @@ body {
 .switch {
 	position: relative;
 	display: inline-block;
-	width: 160px;
+	width: 60px;
 	height: 34px;
 }
 
@@ -16,7 +16,6 @@ body {
 	height: 0;
 }
 
-/* the control */
 .slider {
 	position: absolute;
 	cursor: pointer;
@@ -24,10 +23,11 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #aaa;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
 }
 
-/* the button */
 .slider:before {
 	position: absolute;
 	content: "";
@@ -36,34 +36,26 @@ body {
 	left: 4px;
 	bottom: 4px;
 	background-color: white;
-	transition: .5s;
+	-webkit-transition: .4s;
+	transition: .4s;
 }
 
-/* when clicked, changes background of control */
 input:checked+.slider {
 	background-color: #2196F3;
 }
 
-/* when clicked, shifts button right*/
-/* when unclicked, shifts button left*/
-input:checked+.slider:before {
-	transform: translateX(126px);
-	transition-timing-function: 
-	cubic-bezier(0,1.81,.56,.49)
-}
-
-/* keyboard */
 input:focus+.slider {
-	outline: 3px solid blue;
-	box-shadow: 0 0 10px red;
+	box-shadow: 0 0 1px #2196F3;
 }
 
-/* makes rounded edges on the control */
+input:checked+.slider:before {
+	transform: translateX(26px);
+}
+
 .slider.round {
 	border-radius: 34px;
 }
 
-/* makes rounded edges on the button */
 .slider.round:before {
 	border-radius: 50%;
 }
