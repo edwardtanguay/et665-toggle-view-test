@@ -10,9 +10,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 </label>
 
 
-<hr/>
-<label>
-  First Name: 
-  <input type="checkbox"/>
-</label>
 `

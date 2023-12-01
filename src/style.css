@@ -6,8 +6,8 @@ body {
 .switch {
 	position: relative;
 	display: inline-block;
-	width: 160px;
-	height: 34px;
+	width: 34px;
+	height: 126px;
 }
 
 .switch input {
@@ -34,7 +34,7 @@ body {
 	height: 26px;
 	width: 26px;
 	left: 4px;
-	bottom: 4px;
+	bottom: 96px;
 	background-color: white;
 	transition: .5s;
 }
@@ -47,7 +47,7 @@ input:checked+.slider {
 /* when clicked, shifts button right*/
 /* when unclicked, shifts button left*/
 input:checked+.slider:before {
-	transform: translateX(126px);
+	transform: translateY(93px);
 	transition-timing-function: 
 	cubic-bezier(0,1.81,.56,.49)
 }
