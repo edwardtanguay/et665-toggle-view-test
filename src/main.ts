@@ -9,7 +9,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
   <span class="slider round"></span>
 </label>
 
-<p>on</p>
-<p>off</p>
+<p>off / on</p>
 
 `
